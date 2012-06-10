@@ -111,6 +111,11 @@ if ( $status == -1 )
 $cartId    = intval($res['trans_session_id']);
 $orderId   = Order::getOrderByCartId($cartId);
 
+if (!$orderId)
+{
+    exit('OK');
+}
+
 $history = new OrderHistory();
 $history->id_order = intval($orderId);
 
