@@ -8,7 +8,7 @@
 
 <p>{l s='Płatność została przygotowana, kliknij dalej, aby przejść na stronę PayU (płatności.pl) i dokonczyć transakcję.' mod='payu'}<br /></p>
 
-<form action="https://www.platnosci.pl/paygw/ISO/NewPayment" method="POST" name="payform">
+<form action="https://www.platnosci.pl/paygw/UTF/NewPayment" method="POST" name="payform">
 <input type="hidden" name="first_name" value="{$firstName}">
 <input type="hidden" name="last_name" value="{$lastName}">
 <input type="hidden" name="email" value="{$clientsEmail}">
