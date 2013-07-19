@@ -111,7 +111,8 @@ if ($status == -1) {
 }
 
 // dekodowanie session_id - zawiera nr koszyka i znacznik czasu
-$cartId = intval(explode('_', $parts[2])[0]);
+$cart_ts = explode('_', $parts[2]);
+$cartId = intval($cart_ts[0]);
 $orderId = Order::getOrderByCartId($cartId);
 
 if (!$orderId) {

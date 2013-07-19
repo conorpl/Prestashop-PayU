@@ -205,7 +205,7 @@ class payu extends PaymentModule {
                 Configuration::updateValue('PAYU_AUTHKEY1', $auth1);
             }
             
-            if ( array_key_exists('PAYU_AUTHKEY1', $_POST) ) {
+            if ( array_key_exists('PAYU_AUTHKEY2', $_POST) ) {
                 $auth2 = pSQL( $_POST['PAYU_AUTHKEY2'] );
                 Configuration::updateValue('PAYU_AUTHKEY2', $auth2);
             }
